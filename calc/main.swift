@@ -2,8 +2,8 @@
 //  main.swift
 //  calc
 //
-//  Created by Jesse Clark on 12/3/18.
-//  Copyright © 2018 UTS. All rights reserved.
+//  Created by Ka Yuen Li on 3/16/21.
+//  Copyright © 2021 UTS. All rights reserved.
 //
 
 import Foundation
@@ -11,17 +11,7 @@ import Foundation
 var args = ProcessInfo.processInfo.arguments
 args.removeFirst() // remove the name of the program
 
-// Retrieve User Input
-//let no1 = args[0]; // Sample Code Only! Update Required!
-//let operator = args[1]; // Sample Code Only! Update Required!
-//let no2 = args[2]; // Sample Code Only! Update Required!
-
-// Initialize a Calculator object
 let calculator = Calculator();
-
-var input: [String] = ["2","*","-4"];
-
-// Calculate the result
-let result = calculator.calculate(args: input)
+let result = calculator.calculate(args: args)
 
 print(result)
